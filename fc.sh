@@ -13,7 +13,6 @@ fi
 summ=0
 dr=`pwd`
 Dir=$(find "$start" -type d)
-echo $Dir
 
 for d in $Dir
 do
@@ -39,4 +38,4 @@ let i++
 done
 
 done
-echo $summ
+echo "Total number of files in $Dir: $summ"
