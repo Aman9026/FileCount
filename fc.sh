@@ -29,6 +29,12 @@ if [ -f ${arry[$i]} ]; then
 let summ++
 fi
 
+if [ "$test" == "1" ]; then
+echo "Not executed properly" >&2
+exit 1
+fi
+
+
 let i++
 done
 
