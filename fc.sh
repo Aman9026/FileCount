@@ -9,3 +9,9 @@ then
 echo "$start not a directory"
 exit 1
 fi
+
+summ=0
+dr=`pwd`
+Dir=$(find "$start" -type d)
+echo $Dir
+
