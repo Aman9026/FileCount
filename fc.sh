@@ -23,5 +23,14 @@ cd $dr/$d
 arry=(`ls -p | grep -v / `)
 len=${#arry[*]}
 i=0
+while [ $i -lt $len ]; do
+
+if [ -f ${arry[$i]} ]; then
+let summ++
+fi
+
+let i++
+done
+
 done
 echo $summ
