@@ -15,3 +15,13 @@ dr=`pwd`
 Dir=$(find "$start" -type d)
 echo $Dir
 
+for d in $Dir
+do
+
+cd $dr/$d
+
+arry=(`ls -p | grep -v / `)
+len=${#arry[*]}
+i=0
+done
+echo $summ
